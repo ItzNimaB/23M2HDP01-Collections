@@ -18,9 +18,9 @@ var tests = new CollectionTester<int>(input, x => int.Parse(x), x => x);
 
 //Add collections
 tests.Add(new BaseLineCollection<int>());
-/*tests.Add(new ListCollection<int>());
+tests.Add(new ListCollection<int>());
 tests.Add(new LinkedListCollection<int>());
-tests.Add(new ArrayUnknownSizeCollection<int>());*/
+tests.Add(new ArrayUnknownSizeCollection<int>());
 
 //Test all collections.
 Console.WriteLine($"Testing collection size is {dynamicSize}.");

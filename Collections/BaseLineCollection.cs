@@ -1,4 +1,6 @@
-﻿namespace H2_Collections.Collections;
+﻿using System.Collections.Generic;
+
+namespace H2_Collections.Collections;
 internal class BaseLineCollection<T> : BaseCollection<T>
 {
     private T[]? _data;
@@ -26,7 +28,7 @@ internal class BaseLineCollection<T> : BaseCollection<T>
 
     protected override void sortCollection(Func<T, T> comparer)
     {
-        //No sort so do nothing
+        Array.Sort(_data);
     }
 
     public override int Count()
